@@ -37,7 +37,7 @@ if(!$current_post_type || !in_array($current_post_type, $activated_post_types)){
 		<h3 class="beautiful-taxonomy-filters-info-heading"><?php echo apply_filters( 'beautiful_filters_info_heading', __('Active filters', 'beautiful-taxonomy-filters') ); ?></h3>
 	<?php endif; ?>
 	<?php if(!$hide_postcount): ?>
-		<p class="beautiful-taxonomy-filters-postcount"><?php echo apply_filters( 'beautiful_filters_info_postcount', sprintf( __( 'Result of filter: %d', 'beautiful-taxonomy-filters' ), $wp_query->found_posts ) ); ?></p>
+		<p class="beautiful-taxonomy-filters-postcount"><?php echo apply_filters( 'beautiful_filters_info_postcount', sprintf( __( 'Result of filter: %d', 'beautiful-taxonomy-filters' ), $wp_query->found_posts ), $wp_query->found_posts ); ?></p>
 		
 	<?php endif; ?>
 	<?php $posttypes_taxonomies = get_object_taxonomies($current_post_type, 'objects'); ?>
