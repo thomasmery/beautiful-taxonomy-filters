@@ -5,7 +5,8 @@
 	//Document is ready for some JS magic!
 	$(document).ready(function(){
 		$('.beautiful-taxonomy-filters-select').select2({
-			allowClear: true
+			allowClear: true,
+			minimumResultsForSearch: -1
 		});
 	});
 
