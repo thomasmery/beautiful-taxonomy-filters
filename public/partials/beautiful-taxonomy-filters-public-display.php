@@ -93,7 +93,7 @@ if($current_taxonomies && $excluded_taxonomies){
 						* Uses walker found in: public/class-beautiful-taxonomy-filters-walker.php
 						*/
 						$dropdown_args = array(
-							'show_option_all' => $taxonomy->labels->all_items,
+							'show_option_all' => apply_filters( 'beautiful_filters_taxonomy_all_items', $taxonomy->labels->all_items, $taxonomy->name),
 							'taxonomy'      => $key,
 							'name'          => 'select-'.$key, //BUG?? For some reason we can't use the actual taxonomy slugs. If we do wordpress automatically fetches the correct posts without us even changing the URL HOWEVER it all breaks when the term has a non standard latin character in its name (not even in the slug which is what we actually use) such as åäö
 							'show_count'    => $show_count,
