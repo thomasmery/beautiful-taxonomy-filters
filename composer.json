@@ -1,0 +1,10 @@
+{
+    "name": "thomasmery/beautiful-taxonomy-filters",
+    "authors": [
+        {
+            "name": "Thomas Mery",
+            "email": "thomas.mery@gmail.com"
+        }
+    ],
+    "require": {}
+}
