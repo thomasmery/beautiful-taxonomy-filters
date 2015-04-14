@@ -6,5 +6,6 @@
             "email": "thomas.mery@gmail.com"
         }
     ],
+    "type":"wordpress-plugin",
     "require": {}
 }
