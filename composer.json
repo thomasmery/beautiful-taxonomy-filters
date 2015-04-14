@@ -1,11 +1,14 @@
 {
     "name": "wpackagist-plugin/beautiful-taxonomy-filters",
+    "type":"wordpress-plugin",
     "authors": [
         {
             "name": "Thomas Mery",
             "email": "thomas.mery@gmail.com"
         }
     ],
-    "type":"wordpress-plugin",
-    "require": {}
+    "require": {
+    	"composer/installers" : "~1.0.0",
+        "php" : ">=5.2.4",
+    }
 }
